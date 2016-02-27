@@ -21,5 +21,3 @@
     else print number
   end
 end
-
-
