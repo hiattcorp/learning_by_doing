@@ -7,20 +7,24 @@
 # register.pay(5.00)  # => "Your change is $1.22"
 # register.total # => 0.00
 
-
 class CashRegister
-  def purchase
-    puts "Enter cost"
+  def
+    purchase
+    puts 'Enter cost'
     @purchase = gets.chomp.to_f
   end
-  def total
+
+  def
+    total
     @total = @purchase.to_f
     puts "Total is #{@total.to_f}"
   end
-  def pay
-    puts "Enter payment"
+
+  def
+    pay
+    puts 'Enter payment'
     @pay = gets.chomp.to_f
-    puts "Your change is #{@pay-@total}"
+    puts "Your change is #{@pay - @total}"
   end
 end
 
@@ -28,5 +32,3 @@ register = CashRegister.new
 register.purchase
 register.total
 register.pay
-
-
