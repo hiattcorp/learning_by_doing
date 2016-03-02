@@ -13,11 +13,11 @@
 1.upto(100).each do |number|
 
   if number % 3 == 0 && number % 5 == 0
-  print 'FizzBuzz'
+  puts 'FizzBuzz'
   elsif number % 3 == 0
-    print'Fizz'
+    puts 'Fizz'
   elsif number % 5 ==0
-    print 'Buzz'
-    else print number
+    puts 'Buzz'
+    else puts number
   end
 end
