@@ -44,3 +44,6 @@ puts 'Take one down and pass it around, 1 bottle of beer on the wall.'
 puts # Space for line
 puts '1 bottle of beer on the wall, 1 bottles of beer.'
 puts 'Take one down and pass it around, 0 bottles of beer on the wall.'
+puts # Space for line
+puts 'No more bottles of beer on the wall, no more bottles of beer.'
+puts 'Go to the store and buy some more, 99 bottles of beer on the wall.'
