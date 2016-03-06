@@ -8,4 +8,4 @@ puts string_a.upcase
 puts string_a.gsub(/string/, "'string'")
 puts "The string '#{string_a.downcase}' has #{string_a.length} characters"
 puts string_a.reverse.downcase
-puts string_a.length
+puts "#{string_a['practice '] * 2}practice!"
