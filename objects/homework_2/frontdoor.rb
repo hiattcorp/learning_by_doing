@@ -1,6 +1,5 @@
 # Class Frontdoor
 class Frontdoor
-
   def initialize
     @total = 0
   end
@@ -14,11 +13,9 @@ class Frontdoor
   end
 
   def status
-    if @total >1
+    if @total > 1
       puts 'Close the door'
-      elsif puts 'The door is closed'
+    elsif puts 'The door is closed'
     end
   end
-
 end
-
