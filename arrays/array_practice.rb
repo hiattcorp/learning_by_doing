@@ -25,7 +25,7 @@ numbers.slice!(4,3)
 puts "If we delete 5, 6 and 7 from the array, we're left with [#{numbers.join(',')}]"
 # If we add 5 at the beginning of the array, we're left with [5,1,2,3,4,8,9,10]
 numbers.unshift(5)
-puts "If we add 5 at the beginning of the array , we're left with [#{numbers.join(',')}]"
+puts "If we add 5 at the beginning of the array, we're left with [#{numbers.join(',')}]"
 # If we add 6 at the end of the array, we're left with [5,1,2,3,4,8,9,10,6]
 numbers.push(6)
 puts "If we add 6 at the end of the array, we're left with [#{numbers.join(',')}]"
