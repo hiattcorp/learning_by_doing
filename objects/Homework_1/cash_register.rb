@@ -7,17 +7,15 @@
 
 # this is a cashregister
 class CashRegister
+  attr_reader :total
+
   def initialize
     @total = 0.0
   end
 
-  def total
-    @total
-  end
-
   def purchase(amount)
     if (@total + amount) == amount
-      puts "#{@total += amount}"
+      puts @total += amount
     else
       @total += amount
       puts "Your new total is $#{sprintf('%.2f', @total)}"
@@ -25,8 +23,11 @@ class CashRegister
   end
 
   def pay(amount)
-    @total -= amount
-    puts "Your change is $#{sprintf('%.2f', @total)}"
+    if amount >= @total
+      (@total -= amount)
+      puts "Your change is $#{sprintf('%.2f', @total.abs)}"
+    else
+      puts 'That is not enough'
+    end
   end
 end
-

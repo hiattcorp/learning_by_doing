@@ -1,10 +1,14 @@
 ###Rubocop Output
 
 ```
-08:45:50 - INFO - Inspecting Ruby code style: .
-Inspecting 1 file
-.
+Offenses:
 
-1 file inspected, no offenses detected
-[1] guard(main)>
+cash_register.rb:21:34: C: Favor format over sprintf.
+      puts "Your new total is $#{sprintf('%.2f', @total)}"
+                                 ^^^^^^^
+cash_register.rb:28:31: C: Favor format over sprintf.
+      puts "Your change is $#{sprintf('%.2f', @total.abs)}"
+                              ^^^^^^^
+
+1 file inspected, 2 offenses detected
 ```
