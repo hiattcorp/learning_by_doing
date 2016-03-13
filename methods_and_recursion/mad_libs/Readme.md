@@ -1,4 +1,4 @@
-##Rubocop Output
+##Rubocop Output 
 
 ```
 [1] guard(main)>
