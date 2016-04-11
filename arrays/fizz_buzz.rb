@@ -22,8 +22,7 @@
 #   end
 # end
 
-numbers = [*1..100]
-numbers.map do |num|
+def fizz_buzz(num)
   if num % 3 == 0 && num % 5 == 0
     puts 'FizzBuzz'
   elsif num % 3 == 0
@@ -33,3 +32,6 @@ numbers.map do |num|
   else print num
   end
 end
+
+numbers = (1..100).to_a
+puts numbers.map { |num| fizz_buzz(num) }
