@@ -18,14 +18,14 @@ class CashRegister
       puts @total += amount
     else
       @total += amount
-      puts "Your new total is $#{sprintf('%.2f', @total)}"
+      puts "Your new total is $#{format('%.2f', @total)}"
     end
   end
 
   def pay(amount)
     if amount >= @total
       (@total -= amount)
-      puts "Your change is $#{sprintf('%.2f', @total.abs)}"
+      puts "Your change is $#{format('%.2f', @total.abs)}"
     else
       puts 'That is not enough'
     end
