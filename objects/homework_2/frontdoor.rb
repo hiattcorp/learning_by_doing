@@ -1,21 +1,22 @@
 # Class Frontdoor
 class Frontdoor
   def initialize
-    @total = 0
+    @open_status = false
   end
 
   def open
-    @total += 1
+    @open_status = true
   end
 
   def close
-    @total = 0
+    @open_status = false
   end
 
   def status
-    if @total > 1
+    if @open_status =false
       puts 'Close the door'
-    elsif puts 'The door is closed'
+    else
+      puts 'The door is closed'
     end
   end
 end
