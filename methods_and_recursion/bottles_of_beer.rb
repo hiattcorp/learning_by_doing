@@ -1,20 +1,26 @@
 #!/usr/bin/env ruby
 
+def plural(number, text)
+  return text + 's' if number != 1
+  text
+end
+
 def bottles(number)
 
   if number == 0
     puts 'No more bottles of beer on the wall, no more bottles of beer.'
     puts 'Go to the store and buy some more, 99 bottles of beer on the wall.'
+    puts ''
+    return
   end
   puts "#{number} #{plural(number, 'bottle')} of beer on the wall, #{number} #{plural(number, 'bottle')} of beer."
   puts "Take one down and pass it around, #{number != 1 ? (number - 1) : 'no more'} #{plural(number - 1, 'bottle')} of beer on the wall."
   puts ''
-  on_wall(number - 1)
+  bottles(number - 1)
 end
 
-
 number = 99
-on_wall(number)
+bottles(number)
 
 
 #bottles = 99
